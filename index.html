@@ -26,89 +26,6 @@
              <p>Woot! Got the (vanilla) Javascript to work!</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum labore cumque, laborum, dolorem dolor doloribus iste qui omnis? Consequuntur sapiente mollitia iure quas. Rem nobis tenetur, est accusamus iste dolor, necessitatibus, facilis error ratione aliquid sequi voluptates dignissimos. Quidem, quam, rem? Molestias odio, perferendis dolores doloremque eum quo mollitia atque, sit inventore nisi accusamus magnam vitae temporibus maxime et in aliquam qui aliquid obcaecati alias unde repellat laudantium quam blanditiis. Blanditiis, earum itaque veritatis et numquam culpa, tempore magnam. Quas laborum voluptate id vero. Voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nemo reprehenderit nostrum nesciunt, deleniti facere voluptas eligendi expedita dolor at praesentium sequi. Accusamus vitae ut necessitatibus aut, repudiandae voluptate! Excepturi quam explicabo quis illo, qui a ipsam sit atque non sed doloribus maiores in quo ut voluptatem neque animi, saepe facilis nemo et! Temporibus dolores deserunt illo cum aut saepe tenetur, odit velit ipsum beatae dolore illum accusantium alias ullam quas reiciendis! Quod at tenetur sint. Dolorum officia excepturi placeat, facere enim ullam, tempora accusantium culpa voluptates iusto non aperiam beatae ut laboriosam voluptatibus eum corrupti libero, laborum voluptas quasi at fugiat et vel? Eum.</p>
         </main>
-        <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.dropbtn {
-  background-color:#734;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-</style>
-</head>
-<body>
-
-<h2>Clickable Dropdown</h2>
-<p>Click on the button to open the dropdown menu.</p>
-
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
-</div>
-
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-
-</body>
-</html>
-
         <script>
             function dropFunction() {
   document.getElementById("menu-toggle").classList.toggle("show");
@@ -117,7 +34,7 @@ window.onclick = function(event) {
   if (!event.target.matches('.menu-toggle')) {
     var dropdowns = document.getElementsByClassName("main-nav-list active-element");
     var i;
-    for (i = 0; i < dropdowns.length; i++) {
+    for (i = 30; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
